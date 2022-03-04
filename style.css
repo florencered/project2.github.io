@@ -1,0 +1,19 @@
+*{
+	padding: 0px; /*to remove all the borders from all the contenst in the body section*/
+	margin:0px; 
+	box-sizing: border-box;
+} 
+body{
+	background-color: black; 
+	height: 100%; 
+	width: 100%;
+} 
+.carousel-inner img{
+	padding-right:10vh;
+	height: 80vh; /*80 percent of viewport height*/ 
+	padding-left: 10vh;
+} 
+.row img{
+	height:300px;
+	width: 300px;
+}

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>project2</title> 
+	<meta charset="UTF-8"> <!--gives information about the website/blog-->
+	<meta name="blog" content="landing page">
+	<meta name="owned by" content="template"> 
+	<meta name="keywords" content="HTML,CSS,form">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!--cmd link for the scrolling animation usong aos library-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"> 
+	<script src="https://kit.fontawesome.com/53d3f12009.js" crossorigin="anonymous"></script> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<style type="text/css">
+		*{
+			padding: 0px; /*to remove all the borders from all the contenst in the body section*/
+			margin:0px; 
+			box-sizing: border-box;
+			} 
+		body{
+			background-color: black; 
+			height: 100%; 
+			width: 100%;
+			}
+	</style>
+
+</head>
+<body> 
+	<header id="Home">
+		<!--navbar-->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-black px-4 border-bottom fixed-top" >
+			<div class="container-fluid">
+			    <a class="navbar-brand" href="#"><img src="images/logo.png" alt="geeky noobs logo"></a>
+			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			      <span class="navbar-toggler-icon"></span>
+			    </button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5"> <!--ms-auto shifts the content completely towards on side,mt=margin top/mb=margin bottom/me=margin left/ms=margin right-->
+				        <li class="nav-item">
+				          <a class="nav-link active text-center" aria-current="page" href="#Home">Home</a>
+				        </li>
+				        <li class="nav-item">
+				          <a class="nav-link text-center" href="#About">About</a>
+			        	</li>
+			        	<li class="nav-item">
+				          <a class="nav-link text-center" href="#Our Team">Our Team</a>
+			        	</li>
+				        
+				        <li class="nav-item">
+				          <a class="nav-link text-center" href="#Contact Us">Contact Us</a>
+			        	</li>
+				        <li class="nav-item dropdown"><!--responsible for the dropdown navbar-->
+				          <a class="nav-link dropdown-toggle text-center" href="#Services" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <!--refers to that textbox toggle we made for responsiveness,text-center is for bringing text and images towards center,text-start(for left side/at the start of the page)text-end(to shift the text at the end,right side)-->
+				            Services
+				          </a>
+
+				          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> 
+				            <li><a class="dropdown-item " href="#Services">Service</a></li>
+				            <li><hr class="dropdown-divider"></li>
+				            <li><a class="dropdown-item" href="#Services">Another Service</a></li>
+				            <li><hr class="dropdown-divider"></li>
+				            <li><a class="dropdown-item" href="#Services">Yet another service</a></li>
+				          </ul>
+				        </li> 
+				       
+				        
+				    </ul>
+				    <form class="d-flex"> <!--the search box-->
+				       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+				       <button class="btn  btn-light" type="submit">Search</button> <!--the search button beside it-->
+				    </form>
+				</div>
+			</div>
+		</nav> 
+	</header>
+	<!--carousel or the slider-->
+	<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/8.png" class="d-block w-100" alt="first photo">
+    </div>
+    <div class="carousel-item">
+      <img src="images/2.png" class="d-block w-100" alt="second photo">
+    </div>
+    <div class="carousel-item">
+      <img src="images/1.png" class="d-block w-100" alt="third photo">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div> 
+
+
+	<section class="about" id="About"> <!--the about section-->
+		<div class="container"> <!--container fluid sets the width of the container to 100% ,conatiner adds a natural margin to it--> 
+			<div class="text-center py-5"> <!--divhaving normal size for all the device,so we have not defined anything-->
+				<h1 style="color: white;" data-aos="fade-up" data-aos-offset="200">About <span class="text-primary">Us</span></h1>
+				<hr / style="color: white;" class="w-25 m-auto"> 
+			</div> 
+			<div class="row"> <!--want to create two columns occupying equal area--> 
+				<div class="col-12 col-sm-12 col-md-8 col-lg-8  "data-aos="zoom-in" data-aos-offset="200"> <!--the column will occupy all 12 columns for  smmall and very small devices, will occupy half(6/12)boxes for large and medium devices--> 
+					<h1 style="color: white;">Why choose us?</h1> 
+					<p style="color:white;">We are a bunch of dedicated and passionate indivisuals thriving towards success.We leave no stone 
+					unturned when it comes to customer satisfaction.By far we have delivered multiple projects and have been the reason behind thousand smiling faces.Our team of superb and dedicated indivisuals aare actively working and thriving towards perfection of our company.We are the best in our field and have lots of testemonials tp support our claims,so you can trust us blindly,sit back,watch netflix and chill.well,some people pouinted out that they didnt loke the usual lorem ipsum greek text,xo i wrote something you all could understand,hope you like it,thanks</p>
+					<button type="button" class="btn btn-light my-3">Know More</button> 
+
+					
+				</div> 
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4 m-sm-4 m-3 m-lg-0 rounded float-start"> 
+					<img src="images/1.png"data-aos="zoom-in" data-aos-offset="200"> 
+
+				</div> 
+				
+			</div> 
+
+				
+				
+
+				
+			</div>
+			
+		</div>
+		
+	</section> 
+	<section class="accordian" data-aos="zoom-in" data-aos-offset="200"> 
+		<div class="accordion mx-5 mt-5" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Feature 1
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Some other feature
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Yet another feature
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. 
+      </div>
+    </div>
+  </div>
+</div>
+		
+	</section> 
+	<!--services section containing bootstrap cards-->
+	<section class="services py-5" id="Services">
+		<div class="container"> 
+
+			<div class="text-center"> <!--divhaving normal size for all the device,so we have not defined anything-->
+				<h1 style="color: white;" data-aos="fade-up" data-aos-offset="200">Our <span class="text-primary"> Services</span></h1>
+				<hr / style="color: white;" class="w-25 m-auto"> <!--ideally the line should be centered and the width should be 25% of the total screen width-->
+			</div> 
+			<div class="row"> <!--one row had 12 column boxes-->
+				<!--block 1-->
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4"  data-aos="flip-left" data-aos-offset="300"> <!--created three template cards-->
+					<div class="card bg-primary" >
+				      <div class="card-body ">
+				      	<svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-code-square p-2 rounded" viewBox="0 0 16 16" style="background-color:white;border-radius:3%;color:black;">
+							<path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+							<path d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0zm2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0z"/>
+						</svg>
+				        <h5 class="card-title mt-3">Web development</h5>
+				        <p class="card-text">Be it frontend ,back-end or full stack we are the go to people an dthe best in the industry.We are known for making user interactive and responsive websites.We leave no stone unturned in delivering the project thanks to our passionate team of developer on board</p>
+				        <a href="#" class="btn btn-light">Read More</a>
+				      </div>
+				    </div>
+				</div> 
+				<!--block 2-->
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4" data-aos="flip-left" data-aos-offset="300">
+					<div class="card mt-4 mb-sm-4 mb-4">
+				      <div class="card-body">
+				      	 <!--the icon tag for icons,in bootstrao=p we use font awesome cdn for other things we paste the link form font awesome website-->
+				      	 <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" fill="currentColor" class="bi bi-bezier2 p-2 rounded" viewBox="0 0 16 16" style="background-color:blue;border-radius:3%;color:white;">
+  							<path fill-rule="evenodd" d="M1 2.5A1.5 1.5 0 0 1 2.5 1h1A1.5 1.5 0 0 1 5 2.5h4.134a1 1 0 1 1 0 1h-2.01c.18.18.34.381.484.605.638.992.892 2.354.892 3.895 0 1.993.257 3.092.713 3.7.356.476.895.721 1.787.784A1.5 1.5 0 0 1 12.5 11h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5H6.866a1 1 0 1 1 0-1h1.711a2.839 2.839 0 0 1-.165-.2C7.743 11.407 7.5 10.007 7.5 8c0-1.46-.246-2.597-.733-3.355-.39-.605-.952-1-1.767-1.112A1.5 1.5 0 0 1 3.5 5h-1A1.5 1.5 0 0 1 1 3.5v-1zM2.5 2a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm10 10a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/>
+						</svg>
+				        <h5 class="card-title mt-3 ">Machine Learning</h5>
+				        <p class="card-text">Machine learning and deep learning are coming of the age domains,we have managed to find our niche and expertise in this area too thanks to the consistent efforts by our team.We leave no stone unturned in delivering the project thanks to our passionate team of developer on board</p>
+				        <a href="#" class="btn btn-primary">Read More</a>
+				      </div>
+				    </div>
+				</div>
+				<!--block 3-->
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4" data-aos="flip-left" data-aos-offset="300">
+					<div class="card bg-primary ">
+				      <div class="card-body"> 
+				      	<svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-boxes p-2 rounded" viewBox="0 0 16 16" style="background-color:white;border-radius:3%;color:black;">
+  							<path d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z"/>
+						</svg>
+				        <h5 class="card-title mt-3">Content and design</h5>
+				        <p class="card-text">The content and design team always stays on the hook and provides its users and audience wuth day to day news going around us with day to day scenarios,you can vouch on us and we shall deliver our projects in no time</p>
+				        <a href="#" class="btn btn-light">Read More</a>
+				      </div>
+				    </div>
+				</div>
+				
+			</div> 
+			<!--block 4-->
+			<div class="row mt-3"> <!--one row had 12 column boxes-->
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4" data-aos="flip-left" data-aos-offset="300"> <!--created three template cards-->
+					<div class="card">
+				      <div class="card-body">
+				      	<svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-code-square p-2 rounded" viewBox="0 0 16 16" style="background-color:blue;border-radius:3%;color:white;">
+							<path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+							<path d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0zm2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0z"/>
+						</svg>
+				        <h5 class="card-title mt-3">Web development</h5>
+				        <p class="card-text">Be it frontend ,back-end or full stack we are the go to people an dthe best in the industry.We are known for making user interactive and responsive websites.We leave no stone unturned in delivering the project thanks to our passionate team of developer on board</p>
+				        <a href="#" class="btn btn-primary">Read More</a>
+				      </div>
+				    </div>
+				</div> 
+				<!--block 5-->
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4" data-aos="flip-left" data-aos-offset="300">
+					<div class="card mt-4 mb-sm-4 mb-4 bg-primary">
+				      <div class="card-body">
+				      	 <!--the icon tag for icons,in bootstrao=p we use font awesome cdn for other things we paste the link form font awesome website-->
+				      	 <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" fill="currentColor" class="bi bi-bezier2 p-2 rounded" viewBox="0 0 16 16" style="background-color:white;border-radius:3%;color:black;">
+  							<path fill-rule="evenodd" d="M1 2.5A1.5 1.5 0 0 1 2.5 1h1A1.5 1.5 0 0 1 5 2.5h4.134a1 1 0 1 1 0 1h-2.01c.18.18.34.381.484.605.638.992.892 2.354.892 3.895 0 1.993.257 3.092.713 3.7.356.476.895.721 1.787.784A1.5 1.5 0 0 1 12.5 11h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5H6.866a1 1 0 1 1 0-1h1.711a2.839 2.839 0 0 1-.165-.2C7.743 11.407 7.5 10.007 7.5 8c0-1.46-.246-2.597-.733-3.355-.39-.605-.952-1-1.767-1.112A1.5 1.5 0 0 1 3.5 5h-1A1.5 1.5 0 0 1 1 3.5v-1zM2.5 2a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm10 10a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/>
+						</svg>
+				        <h5 class="card-title mt-3">Machine Learning</h5>
+				        <p class="card-text">Machine learning and deep learning are coming of the age domains,we have managed to find our niche and expertise in this area too thanks to the consistent efforts by our team</p>
+				        <a href="#" class="btn btn-light">Read More</a>
+				      </div>
+				    </div>
+				</div> 
+				<!--block 6-->
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4" data-aos="flip-left" data-aos-offset="300">
+					<div class="card ">
+				      <div class="card-body"> 
+				      	<svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-boxes p-2 rounded" viewBox="0 0 16 16" style="background-color:blue;border-radius:3%;color:white;">
+  							<path d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z"/>
+						</svg>
+				        <h5 class="card-title mt-3">Content and design</h5>
+				        <p class="card-text">The content and design team always stays on the hook and provides its users and audience wuth day to day news going around us with day to day scenarios,you can vouch on us and we shall deliver our projects in no time</p>
+				        <a href="#" class="btn btn-primary">Read More</a>
+				      </div>
+				    </div>
+				</div>
+				
+			</div>
+
+
+	</section> 
+	<!--our team section using bootstrap 5 cards of a different format--> 
+	<section class="team my-5 text-center" id="Our Team"> 
+		<div class="container"> <!--covers only the space which is needed instead of the conatiner fluid which covers full width--> 
+			<div class="text-center m-3"> <!--divhaving normal size for all the device,so we have not defined anything-->
+				<h1 style="color: white;" data-aos="fade-up" data-aos-offset="200">Our <span class="text-primary">Team</span></h1>
+				<hr / style="color: white;" class="w-25 m-auto"> <!--ideally the line should be centered and the width should be 25% of the total screen width-->
+			</div>  
+			<div class="row"> 
+				<!--image 1-->
+				<div class="col-12 col-sm-12 col-md-3 col-lg-3 my-3 " data-aos="flip-up" data-aos-offset="300"> 
+					<div class="card" style="width: 15rem;">
+					  <img class="card-img-top" src="images/2.png" alt="Card image cap" style="width: 15rem; height:12rem;">
+					  <div class="card-body">
+					    <h5 class="card-title">Milanda Jones</h5>
+					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					    <a href="#" class="btn btn-primary">View Portfolio</a>
+					  </div>
+					</div> 
+				</div> 
+				<!--image 2-->
+				<div class="col-12 col-sm-12 col-md-3 col-lg-3 my-3" data-aos="flip-down" data-aos-offset="300"> 
+					<div class="card" style="width: 15rem;">
+					  <img class="card-img-top" src="images/3.png" alt="Card image cap" style="width: 15rem;height:12rem;">
+					  <div class="card-body">
+					    <h5 class="card-title">Joseph  Kennedy</h5>
+					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					    <a href="#" class="btn btn-primary">View Portfolio</a>
+					  </div>
+					</div> 
+				</div> 
+				<!--image 3-->
+				<div class="col-12 col-sm-12 col-md-3 col-lg-3 my-3" data-aos="flip-up" data-aos-offset="300"> 
+					<div class="card" style="width: 15rem;">
+					  <img class="card-img-top" src="images/4.png" alt="Card image cap" style="width: 15rem;height:12rem;">
+					  <div class="card-body">
+					    <h5 class="card-title">Birju Prasad</h5>
+					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					    <a href="#" class="btn btn-primary">View Portfolio</a>
+					  </div>
+					</div> 
+				</div> 
+				<!--image 4-->
+				<div class="col-12 col-sm-12 col-md-3 col-lg-3 my-3" data-aos="flip-down" data-aos-offset="300"> 
+					<div class="card"style="width: 15rem;">
+					  <img class="card-img-top" src="images/5.png" alt="Card image cap" style="width: 15rem;height:12rem;">
+					  <div class="card-body">
+					    <h5 class="card-title">Shyam Lal</h5>
+					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					    <a href="#" class="btn btn-primary">View Portfolio</a>
+					  </div>
+					</div>	
+				</div> 
+				<!--second row-->
+			<div class="row"> 
+				<!--image 5-->
+				<div class="col-12 col-sm-12 col-md-3 col-lg-3 my-3 " data-aos="flip-up" data-aos-offset="300"> 
+					<div class="card" style="width: 15rem;">
+					  <img class="card-img-top" src="images/6.png" alt="Card image cap" style="width: 15rem; height:12rem;">
+					  <div class="card-body">
+					    <h5 class="card-title">Justin Timberlake</h5>
+					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					    <a href="#" class="btn btn-primary">View Portfolio</a>
+					  </div>
+					</div> 
+				</div> 
+				<!--image 6-->
+				<div class="col-12 col-sm-12 col-md-3 col-lg-3 my-3" data-aos="flip-down" data-aos-offset="300"> 
+					<div class="card" style="width: 15rem;">
+					  <img class="card-img-top" src="images/7.png" alt="Card image cap" style="width: 15rem;height:12rem;">
+					  <div class="card-body">
+					    <h5 class="card-title">Tayloria Swift</h5>
+					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					    <a href="#" class="btn btn-primary">View Portfolio</a>
+					  </div>
+					</div> 
+				</div> 
+				<!--image 7-->
+				<div class="col-12 col-sm-12 col-md-3 col-lg-3 my-3" data-aos="flip-up" data-aos-offset="300"> 
+					<div class="card" style="width: 15rem;">
+					  <img class="card-img-top" src="images/9.png" alt="Card image cap" style="width: 15rem;height:12rem;">
+					  <div class="card-body">
+					    <h5 class="card-title">Angela Yu</h5>
+					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					    <a href="#" class="btn btn-primary">View Portfolio</a>
+					  </div>
+					</div> 
+				</div> 
+				<!--image 8-->
+				<div class="col-12 col-sm-12 col-md-3 col-lg-3 my-3" data-aos="flip-down" data-aos-offset="300"> 
+					<div class="card"style="width: 15rem;">
+					  <img class="card-img-top" src="images/10.png" alt="Card image cap" style="width: 15rem;height:12rem;">
+					  <div class="card-body">
+					    <h5 class="card-title">Bauer Bandy</h5>
+					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					    <a href="#" class="btn btn-primary">View Portfolio</a>
+					  </div>
+					</div>	
+				</div> 
+			</div>		
+		</div>	
+	</section> 
+	<section class="contact" id="Contact Us"> 
+		<div class="container"> 
+			<div class="text-center py-5" > <!--divhaving normal size for all the device,so we have not defined anything-->
+				<h1 style="color: white;" data-aos="fade-up" data-aos-offset="200">Contact <span class="text-primary">Us</span></h1>
+				<hr / style="color: white;" class="w-25 m-auto"> 
+			</div> 
+			<div class="row"> 
+				
+		
+				<div class="col-sm-12 col-12 col-md-4 col-lg-4"data-aos="zoom-in" data-aos-offset="200"> 
+					<img src="images/12.png" alt="photo of a person" class="me-md-5 me-lg-5 my-4 img-fluid img-thumbnail rounded"> 
+				</div> 
+				<div class="col-sm-12 col-12 col-md-8 col-lg-8" data-aos="zoom-in" data-aos-offset="200"> 
+					<form class="row g-3">
+					  <div class="col-md-6">
+					    <label for="inputEmail4" class="form-label text-light fs-6">Email</label>
+					    <input type="email" class="form-control" id="inputEmail4">
+					  </div>
+					  <div class="col-md-6">
+					    <label for="inputPassword4" class="form-label text-light fs-6">Password</label>
+					    <input type="password" class="form-control" id="inputPassword4" placeholder="Shouldnt be more than 8 characters long">
+					  </div>
+					  <div class="col-12">
+					    <label for="inputAddress" class="form-label text-light fs-6">Address</label>
+					    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+					  </div>
+					  <div class="col-12">
+					    <label for="inputAddress2" class="form-label text-light fs-6">Birthdate</label>
+					    <input type="date" class="form-control" id="inputAddress2" placeholder="Select your birthdate">
+					  </div>
+					  
+					  <div class="col-md-4">
+					    <label for="inputState" class="form-label text-light fs-6">Age</label>
+					    <select id="inputState" class="form-select">
+					      <option selected>Below 18</option>
+					      <option>Above 18</option>
+					    </select>
+					  </div> 
+					  <div class="col-md-4">
+					    <label for="inputCity" class="form-label text-light fs-6">Appointment time</label>
+					    <input type="time" class="form-control" id="inputCity">
+					  </div>
+					  <div class="col-md-4">
+					    <label for="inputZip" class="form-label text-light fs-6">Appointment date</label>
+					    <input type="date" class="form-control" id="inputDate">
+					  </div> 
+					   
+					  <div class="col-12">
+					    <div class="form-check">
+					      <input class="form-check-input" type="checkbox" id="gridCheck">
+					      <label class="form-check-label text-light fs-6" for="gridCheck ">
+					        Save the credentials
+					      </label>
+					    </div>
+					  </div>
+					  <div class="col-12 text-center">
+					    <button type="submit" class="btn btn-primary text-light px-4 fs-5 ">Enter</button>
+					  </div>
+					</form>
+				</div> 
+			</div> 
+		</div> 
+	</section> 
+	<footer class="footer"> 
+		<div class="container-fluid bg-light mt-5 text-center py-2">
+			
+			<a href ="https://www.instagram.com"> 
+				<i class="fab fa-instagram fa-2x text-center"style="color:black;padding-right:25px" ></i>
+			</a>
+			<a href="https://www.discord.com text-center">
+				<i class="fab fa-discord fa-2x" style="color:black;padding-right:25px"></i>
+			</a>
+			<a href="https://www.twitter.com text-center">
+				<i class="fab fa-twitter fa-2x" style="color:black;padding-right:25px"></i>
+			</a> 
+			
+
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> 
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!--js script tags for AOS library--> 
+	<script>
+  		AOS.init();
+	</script>
+</body>
+</html>
